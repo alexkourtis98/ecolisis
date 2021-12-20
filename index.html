@@ -9,26 +9,20 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap5.css" rel="stylesheet">
-
-    <!-- Favicons -->
-    <!--    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="1100x1100">-->
-    <!--    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">-->
-    <!--    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">-->
-    <!--    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">-->
-    <!--    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">-->
-    <!--    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">-->
-    <meta content="#7952b3" name="theme-color">
-
     <style>
-        .land {
-            object-fit: cover;
-            width: 100%;
-            display: inline-block;
-            background-size: cover;
-            min-height: 100vh;
-            background: url('picwall.png') no-repeat right;
-            z-index: 999 !important;
+        .ulwithpaddedlis li {
+            padding: 6px;
         }
+
+        /*.land {*/
+        /*    object-fit: cover;*/
+        /*    width: 100%;*/
+        /*    display: inline-block;*/
+        /*    background-size: cover;*/
+        /*    min-height: 100vh;*/
+        /*    background: url('picwall.png') no-repeat right;*/
+        /*    z-index: 999 !important;*/
+        /*}*/
 
         body {
             padding-top: 0 !important;
@@ -44,15 +38,6 @@
             font-family: 'myfont', serif !important;
         }
 
-        .land2 {
-            width: 100vw;
-            display: inline-block;
-            background-size: cover;
-            height: 100vh;
-            background: url('123132133.png') no-repeat right;
-            z-index: 999 !important;
-        }
-
         @font-face {
             font-family: "myfont2";
             src: url('roboto-medium.woff2') format('woff');
@@ -60,7 +45,15 @@
 
         .myheader2 * {
             color: #41ad60 !important;
-            font-family: 'myfont2' !important;
+            font-family: 'myfont2', serif !important;
+        }
+
+        img:not(.notme) {
+            max-height: 500px !important;
+        }
+
+        section {
+            min-height: 70vh;
         }
     </style>
 
@@ -69,45 +62,36 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-            <div class="navbar-brand display-1 text-white">EcoLisis</div>
-            <!--            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"-->
-            <!--                    class="navbar-toggler"-->
-            <!--                    data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">-->
-            <!--                <span class="navbar-toggler-icon"></span>-->
-            <!--            </button>-->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <!--                        <a aria-current="page" class="nav-link text-white" href="#">Home</a>-->
-                    </li>
-                    <li class="nav-item">
-                        <!--                        <a aria-current="page" class="nav-link text-white" href="#">About</a>-->
-                    </li>
-                    <li class="nav-item">
-                        <a aria-current="page" class="nav-link btn text-white"
-                           href="#" style="background-color: #41ad60; color: white;">Download</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<!--    url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Senden%2C_Schloss_Senden_&#45;&#45;_2020_&#45;&#45;_0486-90.jpg')-->
-<!--    <div class="text-white land bg-dark">-->
-<!--    </div>-->
+<!--<header>-->
+<!--    <nav class="navbar navbar-expand-md navbar-dark bg-dark">-->
+<!--        <div class="container">-->
+<!--            <div class="navbar-brand display-1 text-white">EcoLisis</div>-->
+<!--            <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"-->
+<!--                    class="navbar-toggler"-->
+<!--                    data-bs-target="#navbarCollapse" data-bs-toggle="collapse" type="button">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarCollapse">-->
+<!--                <ul class="navbar-nav me-auto mb-2 mb-md-0">-->
+<!--                    <li class="nav-item">-->
+<!--                                                <a aria-current="page" class="nav-link text-white" href="#">Home</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a aria-current="page" class="nav-link text-white" href="#">About</a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a aria-current="page" class="nav-link btn text-white"-->
+<!--                           href="#" style="background-color: #41ad60; color: white;">Download</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
+<!--</header>-->
 
-<!--    <div class="text-white land bg-primary">-->
-<!--    </div>-->
 
-<!--    <div class="text-white land bg-danger">-->
-<!--    </div>-->
 <main style="overflow: hidden;">
-    <!--    <div class="land"-->
-    <!--         style="background: url('newwalll.png') no-repeat !important; object-fit: contain; border: 1px solid red;">-->
-    <img alt=""
+    <img alt="" class="notme"
          src="https://wallpaperaccess.com/full/1599732.jpg"
          style="height: 100%; width: 100%; object-fit: cover; position:absolute; z-index: -1; -webkit-filter: blur(4px)">
     <div class="text-white container" style="height: 100vh; position: relative;">
@@ -116,7 +100,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);">
             <h2 class="text-center mb-4 mt-4">Ποιοί είμαστε</h2>
-            <h5 class="text-center ">Η ομάδα μας συμμετείχε στο διαγωνισμό Piraeus Climathon 2020, για την
+            <h5 class="text-center ">Η ομάδα μας συμμετείχε στο διαγωνισμό Piraeus Climathon 2020, για τη
                 διαχείριση
                 απορριμμάτων στον Δήμο
                 Πειραιά, όπου και κατέλαβε την 1η θέση</h5>
@@ -153,387 +137,350 @@
         </div>
     </div>
 
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="myheader2">
-                        <h1 class="display-5"><b>EcoLisis app</b></h1>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="myheader2">
+                            <h1 class="display-5"><b>EcoLisis app</b></h1>
+                        </div>
+                        <ul>
+                            <li><h4>Η εφαρμογή δίνει τα κίνητρα στους
+                                δημότες να μειώσουν το περιβαλλοντικό
+                                τους αποτύπωμα με μείωση των πλαστικών
+                                ποτηριών και άλλων πλαστικών μίας
+                                χρήσης.</h4></li>
+                            <li><h4>Παρέχει πληροφορίες στους δημότες για τα
+                                σημεία ανακύκλωσης στο Δήμο</h4></li>
+                            <li><h4>Ενισχύει το αίσθημα του ανήκειν στην
+                                κοινότητα, μέσω της συμμετοχής σε
+                                αντίστοιχες δράσεις.</h4></li>
+                        </ul>
                     </div>
-                    <ul>
-                        <br>
-                        <li><h4>Η εφαρμογή δίνει τα κίνητρα στους
-                            δημότες να μειώσουν το περιβαλλοντικό
-                            τους αποτύπωμα με μείωση των πλαστικών
-                            ποτηριών και άλλων πλαστικών μίας
-                            χρήσης.</h4></li>
-                        <br>
-                        <li><h4>Παρέχει πληροφορίες στους δημότες για τα
-                            σημεία ανακύκλωσης στο Δήμο</h4></li>
-                        <br>
-                        <li><h4>Ενισχύει το αίσθημα του ανήκειν στην
-                            κοινότητα, μέσω της συμμετοχής σε
-                            αντίστοιχες δράσεις.</h4></li>
-                    </ul>
-                </div>
-                <div class="col-md-6" style="text-align: center">
-                    <img alt=""
-                         src="Screenshot%202021-12-19%20072018.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    <div class="col-md-6" style="text-align: center">
+                        <img alt=""
+                             src="Screenshot%202021-12-19%20072018.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-6">
+    </section>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="myheader">
+                            <h2><b>Δημιουργία Profile- Σύνδεση</b></h2>
+                        </div>
+                        <br>
+                        <div style="border-left: 3px solid green">
+                            <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">Οι
+                                χρήστες
+                                (δημότες και
+                                επιχειρήσεις) θα έχουν τη
+                                δυνατότητα δημιουργίας
+                                προφίλ στην εφαρμογή</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center">
+                                <img alt=""
+                                     src="profile1.png"
+                                     style="max-height: 100%; max-width: 90%;object-fit: contain">
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img alt=""
+                                     src="profile2.png"
+                                     style="max-height: 100%; max-width: 90%;object-fit: contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
                     <div class="myheader">
-                        <h1 class="display-5"><b>Δημιουργία Profile- Σύνδεση</b></h1>
+                        <h2 class="text-center "><b>Εύρεση Συνεργαζόμενων Επιχειρήσεων</b></h2>
+                        <br>
+                        <br>
                     </div>
-                    <br>
-                    <div style="border-left: 3px solid green">
-                        <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">Οι
-                            χρήστες
-                            (δημότες και
-                            επιχειρήσεις) θα έχουν τη
-                            δυνατότητα δημιουργίας
-                            προφίλ στην εφαρμογή</h4>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: center">
-                            <img alt=""
-                                 src="profile1.png"
-                                 style="max-height: 100%; max-width: 90%;object-fit: contain">
-                        </div>
-                        <div class="col-md-6" style="text-align: center">
-                            <img alt=""
-                                 src="profile2.png"
-                                 style="max-height: 100%; max-width: 90%;object-fit: contain">
-                        </div>
+                    <div class="col-md-12 text-center" style="text-align: center">
+                        <img alt=""
+                             src="evresi0.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+
+                        <img alt=""
+                             src="evresi.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h1 class="display-5 text-center "><b>Εύρεση Συνεργαζόμενων Επιχειρήσεων</b></h1>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-12 text-center" style="text-align: center">
-                    <img alt=""
-                         src="evresi0.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-
-                    <img alt=""
-                         src="evresi.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h1 class="display-5"><b>Επιβράβευση των Χρηστών στο Προφίλ τους</b></h1>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-6" style="text-align: center">
-                    <img alt=""
-                         src="epiv.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-                </div>
-                <div class="col-md-6">
-                    <div style="display: flex; align-items: center; height: 100%; width: 100%;">
-                        <div>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Οι
-                                        χρήστες
-                                        (δημότες και
-                                        επιχειρήσεις) θα έχουν τη
-                                        δυνατότητα δημιουργίας
-                                        προφίλ στην εφαρμογή</h4>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div style="border-left: 3px solid green;">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Οι
-                                        χρήστες
-                                        (δημότες και
-                                        επιχειρήσεις) θα έχουν τη
-                                        δυνατότητα δημιουργίας
-                                        προφίλ στην εφαρμογή</h4>
-                                </div>
-                            </div>
-                        </div>
+    </section>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="myheader">
+                        <h2><b>Επιβράβευση των Χρηστών στο Προφίλ τους</b></h2>
+                        <br>
+                        <br>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h1 class="display-5"><b>Δωρεά Φαγητού</b></h1>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
-                        <div>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Μέσω της εφαρμογής, η επιχείρηση θα μπορεί να δωρίζει μερίδες φαγητού οι οποίες
-                                        θα παραλαμβάνονται από τους αρμόδιους φορείς του Δήμου.</h4>
+                    <div class="col-md-6" style="text-align: center">
+                        <img alt=""
+                             src="epiv.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    </div>
+                    <div class="col-md-6">
+                        <div style="display: flex; align-items: center; height: 100%; width: 100%;">
+                            <div>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Οι
+                                            χρήστες
+                                            (δημότες και
+                                            επιχειρήσεις) θα έχουν τη
+                                            δυνατότητα δημιουργίας
+                                            προφίλ στην εφαρμογή</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="container">
-                                    <div class="quote-box">
-                                        <div class="quote">
-                                            <blockquote>
-                                                "Η Ελλάδα είναι η
-                                                δεύτερη χώρα
-                                                παγκοσμίως στην
-                                                σπατάλη φαγητού.
-                                                "
-                                            </blockquote>
-                                        </div>
-                                        <div class="name">
-                                            © Statista 2021
-                                        </div>
+                                <br>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green;">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Οι
+                                            χρήστες
+                                            (δημότες και
+                                            επιχειρήσεις) θα έχουν τη
+                                            δυνατότητα δημιουργίας
+                                            προφίλ στην εφαρμογή</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" style="text-align: center">
-                    <img alt=""
-                         src="dorea.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h1 class="display-5"><b>Δημιουργία Δράσης</b></h1>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
-                        <div>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Ο Δήμος θα έχει δικό του προφίλ στην εφαρμογή όπου θα εγκρίνει/απορρίπτει
-                                        αιτήματα.</h4>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Τα αιτήματα αυτά μπορεί να αφορούν:
-                                        <ul>
-                                            <li>Δημιουργία εκδηλώσεων.</li>
-                                            <li>Δωρεά φαγητού.</li>
-                                        </ul>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" style="text-align: center">
-                    <img alt=""
-                         src="drasi.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h3 class="display-5"><b>Ενημέρωση για Περιβαλλοντικές Δράσεις & Αδέσποτα</b></h3>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
-                        <div>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Ο Δήμος θα έχει δικό του προφίλ στην εφαρμογή όπου θα εγκρίνει/απορρίπτει
-                                        αιτήματα.</h4>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div style="border-left: 3px solid green; ">
-                                    <h4 style="letter-spacing: 1.5px; font-family: monospace; padding:15px; margin-left: 10px">
-                                        Τα αιτήματα αυτά μπορεί να αφορούν:
-                                        <ul>
-                                            <li>Δημιουργία εκδηλώσεων.</li>
-                                            <li>Δωρεά φαγητού.</li>
-                                        </ul>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" style="text-align: center">
-                    <img alt=""
-                         src="enimerosi.png"
-                         style="max-height: 100%; max-width: 90%;object-fit: contain">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6" style="text-align: center">
-                            <img alt=""
-                                 src="taistra1.png"
-                                 style="max-height: 100%; max-width: 90%;object-fit: contain; z-index: 0">
-                        </div>
-                        <div class="col-md-6" style="text-align: center">
-                            <img alt=""
-                                 src="taistra2.png"
-                                 style="max-height: 100%; max-width: 90%;object-fit: contain; z-index: 0">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <br>
-                    <br>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
                     <div class="myheader">
-                        <h1 class="display-5 "><b>Σημεία με ταΐστρες - Σημεία ανακύκλωσης</b></h1>
+                        <h2><b>Δωρεά Φαγητού</b></h2>
+                        <br>
+                        <br>
                     </div>
-                    <h4 class="text-muted">
-                        Lorem Ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        Lorem Ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                    </h4>
+                    <div class="col-md-6 mt-4">
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
+                            <div>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Μέσω της εφαρμογής, η επιχείρηση θα μπορεί να δωρίζει μερίδες φαγητού οι
+                                            οποίες
+                                            θα παραλαμβάνονται από τους αρμόδιους φορείς του Δήμου.</h4>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="quote-box">
+                                            <div class="quote">
+                                                <blockquote>
+                                                    "Η Ελλάδα είναι η
+                                                    δεύτερη χώρα
+                                                    παγκοσμίως στη
+                                                    σπατάλη φαγητού.
+                                                    "
+                                                </blockquote>
+                                            </div>
+                                            <div class="name">
+                                                © Statista 2021
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="text-align: center">
+                        <img alt=""
+                             src="dorea.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="text-dark ">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="myheader">
-                    <h1 class="display-5"><b>Ενημέρωση για Περιβαλλοντικές Δράσεις & Αδέσποτα</b></h1>
-                    <br>
-                    <br>
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="myheader">
+                        <h2><b>Δημιουργία Δράσης</b></h2>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
+                            <div>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Ο Δήμος θα έχει δικό του προφίλ στην εφαρμογή όπου θα εγκρίνει/απορρίπτει
+                                            αιτήματα.</h4>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Τα αιτήματα αυτά μπορεί να αφορούν:
+                                        </h4>
+                                        <ul>
+                                            <li><h4>Δημιουργία εκδηλώσεων.</h4></li>
+                                            <li><h4>Δωρεά φαγητού.</h4></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="text-align: center">
+                        <img alt=""
+                             src="drasi.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    </div>
                 </div>
-                <div class="col-md-12 mt-4">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
-                        <div>
-                            <div class="row">
-                                <ul>
-                                    <li><h4>Οι δημότες θα μπορούν να εντοπίζουν τα πλησιέστερα προς
-                                        αυτούς σημεία
-                                        ανακύκλωσης - Κεντρικά Green spots για ανταποδοτική ανακύκλωση.</h4></li>
-                                    <br>
-                                    <li><h4>Επιλογές “Αντάλλαξέ το” και “Δώρισε το” όπου οι δημότες θα μπορούν να
-                                        ανταλάσσουν μεταξύ τους πράγματα που δεν χρειάζονται ή να τα δωρίζουν στις
-                                        διάφορες δομές..</h4></li>
-                                    <br>
-                                    <li><h4>Δημιουργία εθελοντικών δικτύων μεταξύ των πολιτών - Ομάδες δράσης - event
-                                        organizing..</h4></li>
-                                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="myheader">
+                        <h2><b>Ενημέρωση για Περιβαλλοντικές Δράσεις & Αδέσποτα</b></h2>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
+                            <div>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Ο Δήμος θα έχει δικό του προφίλ στην εφαρμογή όπου θα εγκρίνει/απορρίπτει
+                                            αιτήματα.</h4>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div style="border-left: 3px solid green; ">
+                                        <h4 style="letter-spacing: 2px; font-family: monospace; padding:15px; margin-left: 10px">
+                                            Τα αιτήματα αυτά μπορεί να αφορούν:
+                                        </h4>
+                                        <ul>
+                                            <li><h4>Δημιουργία εκδηλώσεων.</h4></li>
+                                            <li><h4>Δωρεά φαγητού.</h4></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="text-align: center">
+                        <img alt=""
+                             src="enimerosi.png"
+                             style="max-height: 100%; max-width: 90%;object-fit: contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6" style="text-align: center">
+                                <img alt=""
+                                     src="taistra1.png"
+                                     style="max-height: 100%; max-width: 90%;object-fit: contain; z-index: 0">
+                            </div>
+                            <div class="col-md-6" style="text-align: center">
+                                <img alt=""
+                                     src="taistra2.png"
+                                     style="max-height: 100%; max-width: 90%;object-fit: contain; z-index: 0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <br>
+                        <br>
+                        <div class="myheader">
+                            <h2><b>Σημεία με ταΐστρες - Σημεία ανακύκλωσης</b></h2>
+                        </div>
+                        <h4 class="text-muted">
+                            <ul class="ulwithpaddedlis">
+                                <li>asddasdadasdasdsdaddaasdadsda</li>
+                                <li>asddasdadasdasdsdaddaasdadsda</li>
+                                <li>asddasdadasdasdsdaddaasdadsda</li>
+                                <li>asddasdadasdasdsdaddaasdadsda</li>
+                                <li>asddasdadasdasdsdaddaasdadsda</li>
+                            </ul>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-dark ">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="myheader">
+                        <h2><b>Ενημέρωση για Περιβαλλοντικές Δράσεις & Αδέσποτα</b></h2>
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
+                            <div>
+                                <div class="row">
+                                    <ul>
+                                        <li><h4>Οι δημότες θα μπορούν να εντοπίζουν τα πλησιέστερα προς
+                                            αυτούς σημεία
+                                            ανακύκλωσης - Κεντρικά Green spots για ανταποδοτική ανακύκλωση.</h4></li>
+                                        <li><h4>Επιλογές “Αντάλλαξέ το” και “Δώρισε το” όπου οι δημότες θα μπορούν να
+                                            ανταλάσσουν μεταξύ τους πράγματα που δε χρειάζονται ή να τα δωρίζουν στις
+                                            διάφορες δομές..</h4></li>
+                                        <li><h4>Δημιουργία εθελοντικών δικτύων μεταξύ των πολιτών - Ομάδες δράσης -
+                                            event
+                                            organizing..</h4></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!--    <div class="text-dark ">-->
-    <!--        <div class="container">-->
-    <!--            <div class="row mt-5">-->
-    <!--                <div class="myheader">-->
-    <!--                    <h1 class="display-5"><b>Στρατηγική-->
-    <!--                        Προώθησης</b></h1>-->
-    <!--                    <br>-->
-    <!--                    <br>-->
-    <!--                </div>-->
-    <!--                <div class="row">-->
-    <!--                    <div class="col-lg-4">-->
-    <!--                        <h3>ADDS</h3>-->
-    <!--                        <h5 class="text-muted">Διαφήμιση στα social-->
-    <!--                            media.</h5>-->
-    <!--                    </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
-    <!--                    <div class="col-lg-4">-->
-    <!--                        <h3>ΤΟΠΙΚΑ EVENTS</h3>-->
-    <!--                        <h5 class="text-muted">Events λανσαρίσματος-->
-    <!--                            της εφαρμογής, στα-->
-    <!--                            οποία ο πολίτης θα-->
-    <!--                            γνωρίζει την-->
-    <!--                            εφαρμογή και τις-->
-    <!--                            λειτουργίες της.</h5>-->
-    <!--                    </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
-    <!--                    <div class="col-lg-4">-->
-    <!--                        <h3>ΣΥΝΕΡΓΑΣΙΑ ΜΕ-->
-    <!--                            Μ.Κ.Ο</h3>-->
-    <!--                        <h5 class="text-muted">Πρόγραμμα-->
-    <!--                            εκπαίδευσης της-->
-    <!--                            Ecogenia</h5>-->
-    <!--                    </div>&lt;!&ndash; /.col-lg-4 &ndash;&gt;-->
-    <!--                </div>&lt;!&ndash; /.row &ndash;&gt;-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <br>
-    <br>
-    <br>
+    </section>
 </main>
-
-
-<script crossorigin="anonymous"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        src="/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
