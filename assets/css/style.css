@@ -1,0 +1,49 @@
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.height100vh {
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 1200px) {
+    img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        height: 300px;
+    }
+}
+
+footer {
+    height: 50px;
+}
+
+html {
+    scroll-behaviour: smooth;
+}
+
+img {
+    max-height: 600px;
+}
+
+.row {
+    margin: 5px;
+}
+
+#landing {
+    background-color: #23AA85;
+}
