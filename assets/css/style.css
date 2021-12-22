@@ -17,14 +17,31 @@ h1, h2, h3, h4, h5 {
 }
 
 @media only screen and (max-width: 1200px) {
-    img {
-        height: 400px;
+    #landingimg {
+        height: 400px !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    img {
-        height: 300px;
+    img:not(#logo, .playstore) {
+        width: 300px;
+        margin: auto;
+    }
+
+    .playstore {
+        height: 40px !important;
+    }
+
+    #landingimg {
+        height: 300px !important;
+    }
+
+    .socialtext h1 {
+        font-size: 20px !important;
+    }
+
+    .socialtext p {
+        font-size: 15px !important;
     }
 }
 
@@ -36,7 +53,7 @@ html {
     scroll-behaviour: smooth;
 }
 
-img {
+img:not(#logo) {
     max-height: 600px;
 }
 
@@ -46,4 +63,12 @@ img {
 
 #landing {
     background-color: #23AA85;
+}
+
+img {
+    padding: 0 !important;
+}
+
+.feature {
+    margin: auto;
 }
