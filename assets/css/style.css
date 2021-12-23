@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5 {
         height: 400px !important;
     }
 
+    .ecopolisnav {
+        padding: 10px !important;
+    }
+
     .ecopolisnav * {
         color: black !important;
     }
