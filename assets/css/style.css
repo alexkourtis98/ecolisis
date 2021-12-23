@@ -5,7 +5,7 @@ footer ul {
 
 ul li {
     list-style-type: none;
-    display: inline;
+    /*display: inline;*/
 }
 
 .height100vh {
@@ -68,7 +68,7 @@ html {
 }
 
 img:not(#logo) {
-    max-height: 600px;
+    max-height: 450px;
 }
 
 .row {
@@ -77,6 +77,10 @@ img:not(#logo) {
 
 #landing {
     background-color: #23AA85;
+    /*background-image: url("https://www.climate-kic.org/wp-content/uploads/2021/01/49525293263_9b945a8ab0_c.jpg");*/
+    /*background-size: 100% 100%;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
 }
 
 img {
@@ -97,4 +101,14 @@ img {
 
 #ecopolisnav {
     transition: 0.5s ease-in-out;
+}
+
+.mybtn {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    text-align: center;
+}
+
+.feature {
+    margin: 60px
 }
