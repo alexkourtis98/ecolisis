@@ -1,58 +1,108 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta content="EcoLisis, Sustainability, Climathon" name="keywords">
+    <meta content="EcoPolis, Sustainability, Climathon" name="keywords">
     <meta content="Alexandros Kourtis" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-    <meta content="EcoLisis App Website" name="The official website for the EcoLisis App">
+    <meta content="EcoPolis App Website" name="The official website for the EcoPolis App">
     <link href="assets/img/logo.png" rel="icon" type="image/png">
-    <title>EcoLisis App</title>
+    <title>EcoPolis App</title>
 
     <link href="assets/libs/fontawesome-free-6.0.0-beta3-web/css/all.css"
           rel="stylesheet"/>
 
     <link href="assets/libs/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- MDB -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 <!--header & navbar starts here-->
 <header>
-    <nav aria-label="Tenth navbar example" class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation"
+    <nav class="ecopolisnav navbar navbar-expand-lg navbar-light bg-light fixed-top" id="ecopolisnav">
+        <div class="container">
+            <button aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler"
-                    data-bs-target="#navbarsExample08" data-bs-toggle="collapse" type="button">
+                    data-bs-target="#navbarExample01" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-                <ul class="navbar-nav">
-                    <li>
-                        <a class="navbar-brand">
-                            <img alt="EcoLisis Logo" class="d-inline-block align-top" height="30" id="logo"
-                                 src="assets/img/logo.png"
-                                 width="30">
+            <div class="collapse navbar-collapse" id="navbarExample01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a aria-current="page" class="nav-link" href="#introduction">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link"
+                                href="#"
+                                rel="nofollow"
+
+                        >About</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link"
+                                href="#"
+
+                        >Features</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                                class="nav-link"
+                                href="#"
+
+                        >Contact</a
+                        >
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav flex-row">
+                    <!-- Icons -->
+                    <li class="nav-item">
+                        <a
+                                class="nav-link pe-2"
+                                href="#"
+                                rel="nofollow"
+
+                        >
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#landing">Home</a>
+                        <a
+                                class="nav-link px-2"
+                                href="#"
+                                rel="nofollow"
+
+                        >
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#introduction">About</a>
+                        <a
+                                class="nav-link px-2"
+                                href="#"
+                                rel="nofollow"
+
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-                           id="dropdown08">Follow us</a>
-                        <ul aria-labelledby="dropdown08" class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Facebook</a></li>
-                            <li><a class="dropdown-item" href="#">Instagram</a></li>
-                        </ul>
+                        <a
+                                class="nav-link px-2"
+                                href="#"
+                                rel="nofollow"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -68,15 +118,15 @@
         <div class="container height100vh d-flex align-items-center justify-content-center text-white">
             <div class="row d-flex align-items-center justify-content-center text-white text-center">
                 <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 ">
-                    <img alt="Preview of our EcoLisis' events (news) page" id="landingimg" src="assets/img/events.png"
+                    <img alt="Preview of our EcoPolis' events (news) page" id="landingimg" src="assets/img/events.png"
                          style="max-height: 600px; object-fit: contain; margin: auto">
                 </div>
                 <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
-                    <h1 class="display-5 mb-5">
-                        EcoLisis is an Android app designed to encourage sustainability and community
+                    <h1 class="display-6 mb-5">
+                        EcoPolis is an Android app designed to encourage sustainability and community
                         engagement.
                     </h1>
-                    <img alt="The button to download EcoLisis from the Google Play Store" class="playstore"
+                    <img alt="The button to download EcoPolis from the Google Play Store" class="playstore"
                          src="assets/img/google-play-badge.svg" style="height: 50px;">
                 </div>
             </div>
@@ -87,7 +137,7 @@
     <section id="introduction">
         <div class="container mt-5 mb-4 rounded-3">
             <div class="row">
-                <h1 class="display-5 fw-bold text-center">Eco Lisis App</h1>
+                <h1 class="display-5 text-center">EcoPolis App</h1>
                 <div class="mx-auto">
                     <p class="lead mb-4">Η εφαρμογή δίνει τα κίνητρα στους δημότες να μειώσουν το
                         περιβαλλοντικό τους
@@ -107,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                    <h4>Λίγα λόγια για μας,</h4>
+                    <h4 class="lead">Λίγα λόγια για μας,</h4>
                     <p class="lead">Η εφαρμογή δίνει τα κίνητρα στους
                         δημότες να μειώσουν το περιβαλλοντικό
                         τους αποτύπωμα με μείωση των πλαστικών
@@ -141,7 +191,7 @@
                         αντίστοιχες δράσεις.</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <img alt="Preview of our EcoLisis' main page"
+                    <img alt="Preview of our EcoPolis' main page"
                          src="assets/img/main.png">
                 </div>
             </div>
@@ -154,7 +204,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 text-center">
-                    <img alt="Preview of our EcoLisis' recycle bins page"
+                    <img alt="Preview of our EcoPolis' recycle bins page"
                          src="assets/img/recyclebins.png">
                 </div>
                 <div class="col-md-9 d-flex align-items-center justify-content-center">
@@ -228,12 +278,12 @@
              background: url('https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center fixed; background-size: cover">
                 <div class="text-center socialtext">
                     <h1 class="display-5 fw-bold">Follow us on Social Media : )</h1>
-                    <p class="fs-4 mt-4 mb-4" style="width: 60%; margin: auto">Hello we are eco lisis... please follow
+                    <p class="fs-4 mt-4 mb-4" style="width: 60%; margin: auto">Hello we are EcoPolis... please follow
                         us here
                         and
                         there and everywhere there and everywhere there and everywhere there and everywhere there and
                         everywhere.</p>
-                    <img alt="The button to download EcoLisis from the Google Play Store" class="playstore"
+                    <img alt="The button to download EcoPolis from the Google Play Store" class="playstore"
                          src="assets/img/google-play-badge.svg" style="height: 50px;">
                 </div>
             </div>
@@ -247,13 +297,29 @@
 <footer class="d-flex align-items-center justify-content-center">
     <ul>
         <li>contact us here: <a href="mailto:alexandros.kourtis@acg.edu"
-                                style="padding: 0; margin: 0">ecolisis@gmail.com</a>
+                                style="padding: 0; margin: 0">EcoPolis@gmail.com</a>
         </li>
     </ul>
 </footer>
 <!--The footer ends here-->
+<!---->
+<script src="./assets/libs/bootstrap.bundle.min.js"></script>
+<script>
+    window.onscroll = function () {
+        animateNav()
+    };
 
-<!--bootstrap 5 jquery bundle-->
-<script src="assets/libs/bootstrap.bundle.min.js"></script>
+    function animateNav() {
+        // only change for desktop screens
+        if (screen.width > 1000) {
+            // if user is close to where introduction sections ends do animation
+            if (window.scrollY > 500) {
+                document.getElementById("ecopolisnav").classList.remove("ecopolisnav");
+            } else {
+                document.getElementById("ecopolisnav").classList.add("ecopolisnav");
+            }
+        }
+    }
+</script>
 </body>
 </html>

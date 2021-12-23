@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5 {
     #landingimg {
         height: 400px !important;
     }
+
+    .ecopolisnav * {
+        color: black !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -42,6 +46,16 @@ h1, h2, h3, h4, h5 {
 
     .socialtext p {
         font-size: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ecopolisnav {
+        background: transparent !important;
+    }
+
+    .ecopolisnav * {
+        color: white !important;
     }
 }
 
@@ -71,4 +85,16 @@ img {
 
 .feature {
     margin: auto;
+}
+
+.ecopolisnav {
+    padding: 20px;
+}
+
+.ecopolisnav * {
+    font-weight: 400;
+}
+
+#ecopolisnav {
+    transition: 0.5s ease-in-out;
 }
