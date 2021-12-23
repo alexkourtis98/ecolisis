@@ -132,29 +132,55 @@
             </div>
         </div>
     </section>
+    <!--The landing section ends here-->
 
-    <!--The introduction section starts here-->
-    <section id="introduction">
-        <div class="container mt-5 mb-4 rounded-3">
-            <div class="row">
-                <h1 class="display-5 text-center">EcoPolis App</h1>
-                <div class="mx-auto">
-                    <p class="lead mb-4">Η εφαρμογή δίνει τα κίνητρα στους δημότες να μειώσουν το
-                        περιβαλλοντικό τους
-                        αποτύπωμα με μείωση των πλαστικών ποτηριών και άλλων πλαστικών μίας χρήσης. Παρέχει
-                        πληροφορίες
-                        στους δημότες για τα σημεία ανακύκλωσης στο Δήμο Ενισχύει το αίσθημα του ανήκειν στην
-                        κοινότητα,
-                        μέσω της συμμετοχής σε αντίστοιχες δράσεις.</p>
+    <!--The climathon section starts here-->
+    <section id="climathon">
+        <div class="text-dark rounded-3">
+            <div class="py-5 text-white d-flex align-items-center justify-content-center"
+                 style="height: 500px; object-fit: contain;
+             background: url('https://www.climate-kic.org/wp-content/uploads/2021/01/49525293263_9b945a8ab0_c.jpg') no-repeat center center fixed; background-size: cover; ">
+                <div class="text-center socialtext">
+                    <h2 class="display-6 ">FMore text here</h2>
+                    <p class="fs-4 mt-4 mb-4" style="width: 60%; margin: auto">Hello we are EcoPolis... please follow
+                        us here
+                        and
+                        there and everywhere there and everywhere there and everywhere there and everywhere there and
+                        everywhere.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!--The introduction section ends here-->
+    <div class="container mt-5 mb-5">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                    commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui. </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
+                    commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui. </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+                <p class="lead">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                    Vestibulum id ligula
+                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                    ut fermentum massa justo sit amet risus.</p>
+            </div>
+        </div>
+    </div>
 
     <!--The about section starts here-->
-    <section id="about">
-        <div class="container">
+    <section id="about ">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-md-9">
                     <h4 class="lead">Λίγα λόγια για μας,</h4>
@@ -278,10 +304,12 @@
              background: url('https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center fixed; background-size: cover">
                 <div class="text-center socialtext">
                     <h1 class="display-5 fw-bold">Follow us on Social Media : )</h1>
-                    <p class="fs-4 mt-4 mb-4" style="width: 60%; margin: auto">Hello we are EcoPolis... please follow
+                    <p class="fs-4 mt-4 mb-4" style="width: 60%; margin: auto">Hello we are EcoPolis... please
+                        follow
                         us here
                         and
-                        there and everywhere there and everywhere there and everywhere there and everywhere there and
+                        there and everywhere there and everywhere there and everywhere there and everywhere there
+                        and
                         everywhere.</p>
                     <img alt="The button to download EcoPolis from the Google Play Store" class="playstore"
                          src="assets/img/google-play-badge.svg" style="height: 50px;">
@@ -313,7 +341,7 @@
         // only change for desktop screens
         if (screen.width > 1000) {
             // if user is close to where introduction sections ends do animation
-            if (window.scrollY > 500) {
+            if (window.scrollY > 400) {
                 document.getElementById("ecopolisnav").classList.remove("ecopolisnav");
             } else {
                 document.getElementById("ecopolisnav").classList.add("ecopolisnav");
