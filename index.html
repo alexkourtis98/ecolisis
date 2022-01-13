@@ -15,6 +15,67 @@
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
     <link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet">
     <style>
+        .scroll-down {
+            opacity: 1;
+            -webkit-transition: all .5s ease-in 3s;
+            transition: all .5s ease-in 3s;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -16px;
+            display: block;
+            width: 32px;
+            height: 32px;
+            border: 2px solid #FFF;
+            background-size: 14px auto;
+            border-radius: 50%;
+            z-index: 2;
+            -webkit-animation: bounce 2s infinite 2s;
+            animation: bounce 2s infinite 2s;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+        }
+
+        .scroll-down:before {
+            position: absolute;
+            top: calc(50% - 8px);
+            left: calc(50% - 6px);
+            transform: rotate(-45deg);
+            display: block;
+            width: 12px;
+            height: 12px;
+            content: "";
+            border: 2px solid white;
+            border-width: 0px 0 2px 2px;
+        }
+
+        @keyframes bounce {
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+            40% {
+                -webkit-transform: translateY(-10px);
+                -ms-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+            60% {
+                -webkit-transform: translateY(-5px);
+                -ms-transform: translateY(-5px);
+                transform: translateY(-5px);
+            }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
         h2, h3 {
             font-family: 'myFirstFontSkinny' !important;
         }
@@ -86,12 +147,12 @@
     </div>
 </nav>
 <header class="masthead"
-        style="background: url('https://www.roberthalf.com/sites/default/files/2019-07/6-Benefits-of-Volunteerism-for-Your-Finance-Team-Blog-RHMR-07-17-19.png') no-repeat 100% 100%">
+        style="background: url('https://www.roberthalf.com/sites/default/files/2019-07/6-Benefits-of-Volunteerism-for-Your-Finance-Team-Blog-RHMR-07-17-19.png') no-repeat 100% 100%;
+">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-lg-7 my-auto">
                 <div class="mx-auto header-content">
-
                     <h2>Τι ειναι το <h1 class="fw-bold"><b>EcoPolis App</b>?</h1></h2>
                     <!--                    <h2 class="mb-4">Έδαφος συνεργασίας Δήμου-επιχειρήσεων-πολιτών.</h2>-->
                     <!--                    <a class="btn btn-outline-warning btn-xl" href="#download" role="button">Download Now for Free!</a>-->
@@ -110,6 +171,7 @@
             </div>
         </div>
     </div>
+    <a class="scroll-down" href="#download"></a>
 </header>
 <section class="text-center download" id="download" style="background-color: #23AA85">
     <div class="container">
@@ -295,7 +357,9 @@
             </div>
         </div>
     </div>
+
 </section>
+
 <!--<section class="text-center mb-5" style="background-color: #23AA85; padding: 60px">-->
 <!--    <div class="container">-->
 <!--        <div class="row">-->
@@ -398,6 +462,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 </footer>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/new-age.js"></script>
+<script>
+    $(function () {
+        $('.scroll-down').click(function () {
+            $('html, body').animate({scrollTop: $('section.ok').offset().top}, 'slow');
+            return false;
+        });
+    });
+</script>
 </body>
 
 </html>
