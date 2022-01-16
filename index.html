@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="gr">
 
 <head>
     <meta charset="utf-8">
+    <meta content="Sustainability, EcoLisis, EcoPolis" name="keywords">
+    <meta content="Alexandros Kourtis" name="author">
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <link href="assets/logo.png" rel="icon" type="image/png"/>
     <title>EcoPolis App</title>
-    <meta content="sfdsf" name="description">
+    <meta content="The official website of EcoLisis" name="description">
     <link crossorigin="anonymous" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" rel="stylesheet"/>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,122 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="assets/fonts/font-awesome.min.css" rel="stylesheet">
     <link href="assets/fonts/simple-line-icons.min.css" rel="stylesheet">
-    <style>
-        .scroll-down {
-            opacity: 1;
-            -webkit-transition: all .5s ease-in 3s;
-            transition: all .5s ease-in 3s;
-        }
-
-        .scroll-down {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            margin-left: -16px;
-            display: block;
-            width: 32px;
-            height: 32px;
-            border: 2px solid #FFF;
-            background-size: 14px auto;
-            border-radius: 50%;
-            z-index: 2;
-            -webkit-animation: bounce 2s infinite 2s;
-            animation: bounce 2s infinite 2s;
-            -webkit-transition: all .2s ease-in;
-            transition: all .2s ease-in;
-        }
-
-        .scroll-down:before {
-            position: absolute;
-            top: calc(50% - 8px);
-            left: calc(50% - 6px);
-            transform: rotate(-45deg);
-            display: block;
-            width: 12px;
-            height: 12px;
-            content: "";
-            border: 2px solid white;
-            border-width: 0px 0 2px 2px;
-        }
-
-        @keyframes bounce {
-            0%,
-            100%,
-            20%,
-            50%,
-            80% {
-                -webkit-transform: translateY(0);
-                -ms-transform: translateY(0);
-                transform: translateY(0);
-            }
-            40% {
-                -webkit-transform: translateY(-10px);
-                -ms-transform: translateY(-10px);
-                transform: translateY(-10px);
-            }
-            60% {
-                -webkit-transform: translateY(-5px);
-                -ms-transform: translateY(-5px);
-                transform: translateY(-5px);
-            }
-        }
-
-        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
-
-        h2, h3 {
-            font-family: 'myFirstFontSkinny' !important;
-        }
-
-        h4 {
-            font-family: 'myFirstFont' !important;
-        }
-
-        @font-face {
-            font-family: Light;
-            src: url(assets/fonts/MPLUS1p-Light.ttf);
-        }
-
-        @font-face {
-            font-family: Medium;
-            src: url(assets/fonts/MPLUS1p-Medium.ttf);
-        }
-
-        @font-face {
-            font-family: myFirstFont;
-            src: url(assets/fonts/MPLUS1p-Regular.ttf);
-        }
-
-        @font-face {
-            font-family: myFirstFontSkinny;
-            src: url(assets/fonts/MPLUS1p-Thin.ttf);
-        }
-
-        .list-inline-item a:hover {
-            color: #23AA85 !important;
-        }
-
-        #mainNav .navbar-nav > li > a.active {
-            color: #23AA85 !important;
-        }
-
-        .feature-item i {
-            background-image: linear-gradient(to left, #23AA85, #23AA85) !important;
-            background-position-x: initial;
-            background-position-y: initial;
-            background-size: initial;
-            background-repeat-x: initial;
-            background-repeat-y: initial;
-            background-attachment: initial;
-            background-origin: initial;
-            background-color: initial;
-        }
-    </style>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body data-bs-offset="56" data-bs-spy="scroll" data-bs-target="#mainNav" id="page-top">
-<nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-    <div class="container"><a class="navbar-brand fw-bold" href="./index.html" style="color: #23AA85 !important">EcoPolis
-        App</a>
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white" id="mainNav">
+    <div class="container"><a class="navbar-brand fw-bold" href="./index.html"
+                              style="color: #23AA85 !important;"><img alt=""
+                                                                      src="./assets/brand.png"
+                                                                      style=" width: 150px"></a>
         <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler float-end" data-bs-target="#navbarResponsive" data-bs-toggle="collapse"><i
                 class="fa fa-bars"></i></button>
@@ -138,7 +34,7 @@
                 <li class="nav-item"><a class="nav-link" href="#download">Κατέβασε το</a></li>
                 <li class="nav-item"><a class="nav-link" href="#features">Δυνατότητες</a></li>
                 <li class="nav-item"><a class="nav-link" href="#howitworks">Πως λειτουργεί</a></li>
-                <!--                <li class="nav-item"><a class="nav-link" href="#aboutus">Ποιά είμαστε</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="#team">Η Ομάδα</a></li>
                 <li class="nav-item"><a class="nav-link" href="#connect">Συνδέσου με εμάς</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://au.keepcup.com/impact/our-impact"
                                         target="_blank">Impact Calculator</a></li>
@@ -147,22 +43,20 @@
     </div>
 </nav>
 <header class="masthead"
-        style="background: url('https://www.roberthalf.com/sites/default/files/2019-07/6-Benefits-of-Volunteerism-for-Your-Finance-Team-Blog-RHMR-07-17-19.png') no-repeat 100% 100%;
+        style="background: url('https://www.roberthalf.com/sites/default/files/2019-07/6-Benefits-of-Volunteerism-for-Your-Finance-Team-Blog-RHMR-07-17-19.png') no-repeat center;
 ">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-lg-7 my-auto">
                 <div class="mx-auto header-content">
-                    <h2>Τι ειναι το <h1 class="fw-bold"><b>EcoPolis App</b>?</h1></h2>
-                    <!--                    <h2 class="mb-4">Έδαφος συνεργασίας Δήμου-επιχειρήσεων-πολιτών.</h2>-->
-                    <!--                    <a class="btn btn-outline-warning btn-xl" href="#download" role="button">Download Now for Free!</a>-->
+                    <h2>Τι είναι το <h1 class="fw-bold"><b>EcoPolis App</b>?</h1></h2>
                 </div>
             </div>
             <div class="col-lg-5 my-auto">
                 <div class="device-container">
                     <div class="device-mockup iphone6_plus portrait white">
                         <div class="device">
-                            <img class="img-fluid" src="assets/img/main.png">
+                            <img alt="Screenshot of the app" class="img-fluid" src="assets/img/main.png">
                             <div class="button"></div>
                         </div>
                     </div>
@@ -177,16 +71,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 mx-auto text-white">
-                <!--                <h2 class="mb-4">Bιώσιμη ανάπτυξη</h2>-->
-                <!--                    <a class="btn btn-outline-warning btn-xl" href="#download" role="button">Download Now for Free!</a>-->
-                <h2 class="section-heading">Το μέλλον στην Bιώσιμη ανάπτυξη</h2>
+                <h2 class="section-heading">Το μέλλον στη Βιώσιμη ανάπτυξη</h2>
                 <h4 class="mt-5">Ήρθε να καλύψει το κενό στη συνεργασία Δήμου-επιχειρήσεων-πολιτών.
                     Φιλοδοξούμε το App μας να αποτελέσει έδαφος συνεργασίας μεταξύ πολίτη, δήμου, και επιχειρήσεων.
                     Ο πολίτης επιβραβεύεται για τη συνεισφορά του στην προστασία του
                     περιβάλλοντος μέσω της συλλογής πόντων απο τη μείωση πλαστικών και εξαργύρωσης τους στις επόμενες
                     αγορές του.
                 </h4>
-                <div class="badges mt-5"><a class="badge-link" href="#"><img src="assets/img/google-play-badge.svg"></a>
+                <div class="badges mt-5"><a class="badge-link" href="#"><img alt=""
+                                                                             src="assets/img/google-play-badge.svg"></a>
                 </div>
             </div>
         </div>
@@ -204,7 +97,7 @@
                 <div class="device-container">
                     <div class="device-mockup iphone6_plus portrait white">
                         <div class="device">
-                            <img class="img-fluid" src="assets/img/events.png">
+                            <img alt="" class="img-fluid" src="assets/img/events.png">
                         </div>
                     </div>
                 </div>
@@ -265,149 +158,151 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <br>
-        <br>
+    </div>
+</section>
 
-        <div class="row featurette" id="howitworks" style="padding: 10px;">
-            <div class="col-md-7 d-flex align-items-center justify-content-center">
-                <div>
-                    <h2 class="featurette-heading" style="font-weight: bold !important">Εξοικονόμησε χρήματα & κέρδισε
-                        πόντους</h2>
-                    <h5 style="font-family: Light !important">Μέσω της εφαρμογής, η επιχείρηση επιβραβεύει τον
-                        καταναλωτή κάθε φορά που αποφεύγει την χρήση πλαστικού μίας χρήσης. Αυτό συμβαίνει με το
-                        σκαναρισμα του μοναδικού QR κάθε επιχείρησης απο τον καταναλωτή.
-                        <br>
-                        <br>
-                        Με τον τρόπο αυτό, τόσο η επιχείρηση μειώνει το κόστος της ανα προϊόν, αλλά και ο πολίτης
-                        επιβραβεύεται για την συμμετοχή του στην προστασια του περιβαλλοντος.
-                    </h5>
+<hr>
+
+<section class="features" id="howitworks">
+    <div class="container">
+        <div style="padding: 20px !important;">
+            <div class="row">
+                <div class="col-md-7 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h2 style="font-weight: bold !important">Εξοικονόμησε χρήματα & κέρδισε
+                            πόντους</h2>
+                        <h5 style="font-family: Light,serif !important">Μέσω της εφαρμογής, η επιχείρηση επιβραβεύει τον
+                            καταναλωτή κάθε φορά που αποφεύγει τη χρήση πλαστικού μίας χρήσης. Αυτό συμβαίνει με το
+                            σκανάρισμα του μοναδικού QR κάθε επιχείρησης απο τον καταναλωτή.
+                            <br>
+                            <br>
+                            Με τον τρόπο αυτό, τόσο η επιχείρηση μειώνει το κόστος της ανα προϊόν, αλλά και ο πολίτης
+                            επιβραβεύεται για τη συμμετοχή του στην προστασία του περιβάλλοντος.
+                        </h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="device-container">
-                    <div class="device-mockup iphone6_plus portrait white">
-                        <div class="device">
-                            <img class="img-fluid" src="assets/img/events.png">
+                <div class="col-md-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <img alt="" class="img-fluid" src="assets/img/events.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2 d-flex justify-content-center align-items-center">
-                <div>
-                    <h2 class="featurette-heading" style="font-weight: bold !important">Κάνε ανακύκλωση ή δώρισε σε
-                        κάποιον που έχει ανάγκη</h2>
-                    <h5 style="font-family: Light !important">
-                        Βρες τους πιο κοντινους καδους ανακύκλωσης και γκριν σποτς στην περιοχη σου.
-                        <br>
-                        <br>
-                        Αν εχεις καποιο παλιο αντικειμενο ή τροφιμα που θελεις να δωρισεις, μπορεις να επιλεξεις να τα
-                        δωρισεις σε καποιον οργανισμο.
-                    </h5>
+            <div class="row">
+                <div class="col-md-7 order-md-2 d-flex justify-content-center align-items-center">
+                    <div>
+                        <h2 style="font-weight: bold !important">Κάνε ανακύκλωση ή δώρισε σε
+                            κάποιον που έχει ανάγκη</h2>
+                        <h5 style="font-family: Light,serif !important">
+                            Βρες τους πιο κοντινούς κάδους ανακύκλωσης και green spots στην περιοχή σου.
+                            <br>
+                            <br>
+                            Αν έχεις κάποιο παλιό αντικείμενο ή τρόφιμα που θέλεις να δωρίσεις, μπορείς να επιλέξεις να
+                            τα
+                            δωρίσεις σε κάποιον οργανισμοί.
+                        </h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <div class="device-container">
-                    <div class="device-mockup iphone6_plus portrait white">
-                        <div class="device">
-                            <img class="img-fluid" src="assets/img/events.png">
+                <div class="col-md-5 order-md-1">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <img alt="" class="img-fluid" src="assets/img/events.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
-
-        <div class="row featurette">
-            <div class="col-md-7 d-flex align-items-center justify-content-center">
-                <div>
-                    <h2 class="featurette-heading" style="font-weight: bold !important">Βοήθησε τους τετράποδους φίλους
-                        μας στη γειτονιά σου</h2>
-                    <h5 style="font-family: Light !important">
-                        Η εφαρμογή σου δινει τη δυνατοτητα να βρεις ολα τα σημεια της γειτονιάς σου στην οποια συχναζουν
-                        τα αδεσποτα της γειτονιας, καθως και οι ταιστρες οι οποιες τοποθετημενες γιαυτα.
-                    </h5>
+            <div class="row">
+                <div class="col-md-7 d-flex align-items-center justify-content-center">
+                    <div>
+                        <h2 style="font-weight: bold !important">Βοήθησε τους τετράποδους φίλους
+                            μας στη γειτονιά σου</h2>
+                        <h5 style="font-family: Light,serif !important">
+                            Η εφαρμογή σου δίνει τη δυνατότητα να βρεις ολα τα σημεία της γειτονιάς σου στην οποία
+                            συχνάζουν
+                            τα αδέσποτα της γειτονίας, καθώς και οι ταΐστρες οι οποίες τοποθετημένες γιαυτό.
+                        </h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-5">
-                <div class="device-container">
-                    <div class="device-mockup iphone6_plus portrait white">
-                        <div class="device">
-                            <img class="img-fluid" src="assets/img/events.png">
+                <div class="col-md-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <img alt="" class="img-fluid" src="assets/img/events.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
-<!--<section class="text-center mb-5" style="background-color: #23AA85; padding: 60px">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-10 mx-auto text-white">-->
-<!--                <h2 style="">Ποιά είμαστε-->
-<!--                </h2>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<div class="container marketing" id="aboutus">-->
-<!--    <p>-->
-<!--        Αναζητώντας μία λύση που θα συνδύαζε τη διατήρηση των πόλεων καθαρών, τη βιωσιμότητα αλλά και την συμμετοχή και-->
-<!--        ευαισθητοποίηση των πολιτών, η ομάδα εμπνεύστηκε το App to You.-->
+<section class="text-center mb-5" style="background-color: #23AA85; padding: 60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto text-white">
+                <h2 style="">Ποιά είμαστε
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container marketing" id="team">
+    <p>
+        Αναζητώντας μία λύση που θα συνδύαζε τη διατήρηση των πόλεων καθαρών, τη βιωσιμότητα αλλά και την συμμετοχή και
+        ευαισθητοποίηση των πολιτών, η ομάδα εμπνεύστηκε το App to You.
 
-<!--        Η εφαρμογή φιλοδοξεί να φέρει τους πολίτες πιο κοντά, να δώσει κίνητρα για βιώσιμη ανάπτυξη και το-->
-<!--        σημαντικότερο, να προσφέρει ένα "έδαφος" συνεργασίας δήμου-επιχειρήσεων-πολιτών με στόχο την δημιουργία πιο-->
-<!--        "πράσινων" πόλεων. Ανάμεσα σε έξι ομάδες η ιδέα απέσπασε το πρώτο βραβείο και προκρίθηκε να συμμετέχει στα-->
-<!--        Ευρωπαϊκά Βραβεία Climathon.</p>-->
-<!--    <div class="row row-cols-1 row-cols-md-3 g-4">-->
-<!--        <div class="col">-->
-<!--            <div class="card h-100">-->
-<!--                <img alt="Generic placeholder image"-->
-<!--                     src="https://scontent.fath2-1.fna.fbcdn.net/v/t1.6435-9/161497473_272339511205199_1703553971632835415_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=qoaTOVvn8McAX-80AGh&_nc_ht=scontent.fath2-1.fna&oh=00_AT947JW25mYKusVumasNzKBEzH8qmSd9tjAdeTi7ADfjKg&oe=6201096C">-->
-<!--                <div class="card-body">-->
-<!--                    <h5 class="card-title">Σαμ Ευαγέλλου</h5>-->
-<!--                    <p class="card-text">Ο Σαμουήλ Ευαγγέλου είναι Μηχανικός Οικονομίας & Διοίκησης Πανεπιστημίου-->
-<!--                        Αιγαίου και Υποψήφιος Διδάκτορας στο Τμήμα Τραπεζικής & Χρηματοοικονομικής Πανεπιστημίου-->
-<!--                        Πειραιώς. .</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--            <div class="card h-100">-->
-<!--                <img alt="Generic placeholder image"-->
-<!--                     src="https://scontent.fath2-1.fna.fbcdn.net/v/t39.30808-6/241654065_4191279354302814_3507892983696532877_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Rv3AIN4PDRAAX-hHXGD&tn=0SVqT7QEl8YoaGuJ&_nc_ht=scontent.fath2-1.fna&oh=00_AT-wG7yZMOgAc9OTDWXQmQoIR5F9AYtrOUkH99jrSzHekA&oe=61E002C8">-->
-<!--                <div class="card-body">-->
-<!--                    <h5 class="card-title">Εύα Παπανικολάκη</h5>-->
-<!--                    <p class="card-text">Η Εύα Παπανικολάκη είναι φοιτήτρια σε BA Οικονομικών στο Οικονομικό-->
-<!--                        Πανεπιστήμιο Αθηνών και στο Minor Διεθνών Σχέσεων του DEREE. Επίσης είναι Campus Coordinator του-->
-<!--                        SDSN στο ΟΠΑ, και μέλος του Fridays For Future EU. </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="col">-->
-<!--            <div class="card h-100">-->
-<!--                <img alt="Generic placeholder image"-->
-<!--                     src="https://scontent.fath2-1.fna.fbcdn.net/v/t39.30808-6/241654065_4191279354302814_3507892983696532877_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Rv3AIN4PDRAAX-hHXGD&tn=0SVqT7QEl8YoaGuJ&_nc_ht=scontent.fath2-1.fna&oh=00_AT-wG7yZMOgAc9OTDWXQmQoIR5F9AYtrOUkH99jrSzHekA&oe=61E002C8">-->
-<!--                <div class="card-body">-->
-<!--                    <h5 class="card-title">Αλέξανδρος Κούρτης</h5>-->
-<!--                    <p class="card-text">Η Εύα Παπανικολάκη είναι φοιτήτρια σε BA Οικονομικών στο Οικονομικό-->
-<!--                        Πανεπιστήμιο Αθηνών και στο Minor Διεθνών Σχέσεων του DEREE. Επίσης είναι Campus Coordinator του-->
-<!--                        SDSN στο ΟΠΑ, και μέλος του Fridays For Future EU. </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<br>-->
+        Η εφαρμογή φιλοδοξεί να φέρει τους πολίτες πιο κοντά, να δώσει κίνητρα για βιώσιμη ανάπτυξη και το
+        σημαντικότερο, να προσφέρει ένα "έδαφος" συνεργασίας δήμου-επιχειρήσεων-πολιτών με στόχο την δημιουργία πιο
+        "πράσινων" πόλεων. Ανάμεσα σε έξι ομάδες η ιδέα απέσπασε το πρώτο βραβείο και προκρίθηκε να συμμετέχει στα
+        Ευρωπαϊκά Βραβεία Climathon.</p>
+    <br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img alt="Generic placeholder image"
+                     src="./assets/eva.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Εύα Παπανικολάκη</h5>
+                    <p class="card-text">Η Εύα Παπανικολάκη είναι φοιτήτρια σε BA Οικονομικών στο Οικονομικό
+                        Πανεπιστήμιο Αθηνών και στο Minor Διεθνών Σχέσεων του DEREE. Επίσης είναι Campus Coordinator του
+                        SDSN στο ΟΠΑ, και μέλος του Fridays For Future EU.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img alt=""
+                     src="./assets/sam.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Σαμουήλ Ευαγγέλου</h5>
+                    <p class="card-text">Ο Σαμουήλ Ευαγγέλου είναι Μηχανικός Οικονομίας & Διοίκησης Πανεπιστημίου
+                        Αιγαίου και Υποψήφιος Διδάκτορας στο Τμήμα Τραπεζικής & Χρηματοοικονομικής Πανεπιστημίου
+                        Πειραιώς. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img alt="Generic placeholder image"
+                     src="./assets/alex.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Αλέξανδρος Κούρτης</h5>
+                    <p class="card-text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
 <section class="cta"
          style="background-image:url('https://greekamerica.org/wp-content/uploads/2021/06/Boroume-Blog-Featured-1-1170x878.jpeg');">
     <div class="cta-content">
@@ -423,7 +318,7 @@
 </section>
 <section class="contact" id="connect" style="background-color: #23AA85">
     <div class="container text-white">
-        <h2 style="font-family: 'myFirstFontSkinny' "><span>Γίνε κι εσύ </span><i
+        <h2 style="font-family: 'myFirstFontSkinny',serif "><span>Γίνε κι εσύ </span><i
                 class="fa fa-heart"></i><span>&nbsp;</span>μέλος της παρέας</h2>
         <ul class="list-inline list-social">
             <li class="list-inline-item social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -440,6 +335,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
         </ul>
     </div>
 </section>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat" id="fb-customer-chat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "109557318275705");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v12.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <footer>
     <div class="container">
         <p>©&nbsp;EcoPolis App 2022. All Rights Reserved.</p>
@@ -450,15 +376,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
     </div>
 </footer>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/new-age.js"></script>
-<script>
-    $(function () {
-        $('.scroll-down').click(function () {
-            $('html, body').animate({scrollTop: $('section.ok').offset().top}, 'slow');
-            return false;
-        });
-    });
-</script>
 </body>
 
 </html>
