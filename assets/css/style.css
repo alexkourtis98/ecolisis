@@ -18,6 +18,17 @@
     src: url(../../assets/fonts/MPLUS1p-Thin.ttf);
 }
 
+@font-face {
+    font-family: ubuntuLight;
+    src: url(../../assets/fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: ubuntuRegular;
+    src: url(../../assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+
 @keyframes bounce {
     0%,
     100%,
@@ -105,10 +116,10 @@ h4 {
 }
 
 #mainNav .navbar-nav > li > a {
-    font-size: 11px;
-    font-family: myFirstFont, serif;
+    font-size: 15px;
+    font-family: ubuntuRegular, serif;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: initial !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -121,6 +132,18 @@ h4 {
     padding: 30px;
 }
 
+.nav-link:hover {
+    color: black !important;
+}
+
 .nav-link {
-    color: black !important
+    color: dimgrey !important;
+}
+
+.lead {
+    font-family: ubuntuRegular !important;
+}
+
+.feature-item p {
+    font-family: ubuntuLight !important;
 }
