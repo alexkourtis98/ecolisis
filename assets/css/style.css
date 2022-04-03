@@ -60,15 +60,15 @@ h4 {
 }
 
 .list-inline-item a:hover {
-    color: #23AA85 !important;
+    color: #007CC2 !important;
 }
 
 #mainNav .navbar-nav > li > a.active {
-    color: #23AA85 !important;
+    color: #007CC2 !important;
 }
 
 .feature-item i {
-    background-image: linear-gradient(to left, #23AA85, #23AA85) !important;
+    background-image: linear-gradient(to left, #007CC2, #007CC2) !important;
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
